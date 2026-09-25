@@ -1,0 +1,897 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>POMEGRANÉ — Radiance, Sealed in a Pomegranate</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#ffb3b1",
+            "on-error-container": "#ffdad6",
+            "secondary-fixed-dim": "#e0c38c",
+            "tertiary": "#ffb3b3",
+            "outline-variant": "#594140",
+            "on-secondary-fixed": "#261900",
+            "on-primary-container": "#ff9492",
+            "error-container": "#93000a",
+            "surface-variant": "#3e3233",
+            "primary-fixed-dim": "#ffb3b1",
+            "outline": "#a88a88",
+            "surface-tint": "#ffb3b1",
+            "surface-container-lowest": "#150c0d",
+            "inverse-surface": "#f2dedf",
+            "surface-bright": "#423637",
+            "surface": "#1a1112",
+            "on-background": "#f2dedf",
+            "on-tertiary-fixed": "#400009",
+            "secondary": "#e0c38c",
+            "on-surface-variant": "#e0bfbd",
+            "primary-fixed": "#ffdad8",
+            "on-secondary-container": "#d1b57f",
+            "secondary-fixed": "#fddfa6",
+            "surface-container": "#271d1e",
+            "surface-dim": "#1a1112",
+            "on-surface": "#f2dedf",
+            "tertiary-fixed-dim": "#ffb3b3",
+            "inverse-primary": "#b02c34",
+            "on-tertiary": "#5e151c",
+            "tertiary-fixed": "#ffdad9",
+            "on-primary-fixed-variant": "#8e1120",
+            "background": "#1a1112",
+            "on-error": "#690005",
+            "surface-container-highest": "#3e3233",
+            "on-tertiary-fixed-variant": "#7b2c30",
+            "on-secondary-fixed-variant": "#584419",
+            "inverse-on-surface": "#392d2e",
+            "on-primary-fixed": "#410007",
+            "on-primary": "#680011",
+            "on-secondary": "#3f2e04",
+            "tertiary-container": "#792a2e",
+            "primary-container": "#8b0e1e",
+            "secondary-container": "#5a461b",
+            "surface-container-low": "#23191a",
+            "error": "#ffb4ab",
+            "surface-container-high": "#322728",
+            "on-tertiary-container": "#ff9496"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .lux-glass {
+      background: linear-gradient(135deg, rgba(50, 39, 40, 0.65) 0%, rgba(26, 17, 18, 0.85) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    .gold-glow {
+      box-shadow: 0 0 55px -10px rgba(224, 195, 140, 0.28);
+    }
+    .crimson-aura {
+      background: radial-gradient(circle at 60% 45%, rgba(139, 14, 30, 0.4) 0%, rgba(35, 25, 26, 0.85) 60%, #150c0d 100%);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+<link href="frame-animation.css" rel="stylesheet">
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased selection:bg-primary-container selection:text-primary min-h-screen flex flex-col font-['Plus_Jakarta_Sans'] overflow-x-hidden">
+<!-- TOP LUXURY ANNOUNCEMENT RIBBON -->
+<aside class="w-full bg-surface-container-low border-b border-outline-variant/40 px-4 py-2.5 text-center text-secondary tracking-[0.22em] uppercase font-['Plus_Jakarta_Sans'] text-[11px] flex items-center justify-center gap-3 relative z-50">
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="">HAUTE BOTANICAL RUN: BATCH 04 CURRENTLY DISPATCHING WORLDWIDE</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</aside>
+<!-- LUXURY IMMERSIVE HEADER (DESKTOP & MOBILE RESPONSIVE) -->
+<header class="sticky top-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 px-6 sm:px-10 lg:px-16 py-4 transition-all">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<!-- Left: Mobile Menu / Desktop Nav Links -->
+<div class="flex items-center gap-8">
+<button aria-label="Open menu" class="lg:hidden text-on-surface hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">menu</span>
+</button>
+<nav class="hidden lg:flex items-center gap-8 text-[12px] tracking-[0.2em] uppercase font-medium text-on-surface-variant">
+<a class="hover:text-secondary transition-colors" href="#ritual">The Ritual</a>
+<a class="hover:text-secondary transition-colors" href="#philosophy">Philosophy</a>
+<a class="hover:text-secondary transition-colors" href="#science">Pomegranate Science</a>
+<a class="hover:text-secondary transition-colors text-secondary font-semibold" href="#promegrane-cream">Promegrane</a>
+</nav>
+</div>
+<!-- Center: Luxury Master Logo -->
+<a class="flex flex-col items-center group text-center" href="#">
+<span class="font-['Playfair_Display'] tracking-[0.32em] text-xl sm:text-2xl font-bold text-on-surface group-hover:text-secondary transition-colors">POMEGRANÉ</span>
+<span class="text-[9px] sm:text-[10px] tracking-[0.45em] text-secondary uppercase font-['Plus_Jakarta_Sans'] font-medium">Haute Botanique</span>
+</a>
+<!-- Right: Concierge, Search, Shopping Bag -->
+<div class="flex items-center gap-5 sm:gap-6">
+<a class="hidden sm:inline-block text-[12px] tracking-[0.2em] uppercase text-on-surface-variant hover:text-secondary transition-colors" href="#concierge">Concierge</a>
+<button aria-label="Search collection" class="text-on-surface hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</button>
+<a aria-label="View shopping bag" class="relative text-on-surface hover:text-secondary transition-colors flex items-center" href="#reserve">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+<span class="absolute -top-1 -right-2 size-4 bg-primary-container text-on-primary-container text-[10px] font-bold rounded-full flex items-center justify-center border border-surface-container-lowest">1</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full flex-1">
+<!-- 1.5. PINNED BOTANICAL FRAME SEQUENCE -->
+<section aria-label="POMEGRANE cinematic frame sequence" id="redred-frame-sequence">
+<div class="redred-frame__sticky">
+<canvas aria-label="POMEGRANE Radiance Cream frame animation" id="redred-frame-canvas"></canvas>
+<div class="redred-frame__veil"></div>
+<div class="redred-frame__copy redred-frame__copy--intro is-visible">
+<p class="redred-frame__eyebrow">The ritual begins</p>
+<h2>Radiance,<br><em>sealed in motion.</em></h2>
+<p class="redred-frame__lede">Scroll through the transformation, frame by frame, from crimson botanical essence to ceramic ritual.</p>
+</div>
+<div class="redred-frame__copy redred-frame__copy--reveal">
+<p class="redred-frame__eyebrow">Cold-bio extraction / Batch 04</p>
+<h2>Ancient fruit,<br><em>future skin.</em></h2>
+<p class="redred-frame__lede">A concentrated pomegranate ritual shaped by orchard vitality and French formulation precision.</p>
+</div>
+<div class="redred-frame__copy redred-frame__copy--final">
+<p class="redred-frame__eyebrow">POMEGRANE / Radiance Cream</p>
+<h2>The vessel<br><em>revealed.</em></h2>
+</div>
+<div class="redred-frame__cue"><span>Scroll to explore</span><i></i></div>
+<div aria-hidden="true" class="redred-frame__progress"><span id="redred-frame-progress"></span></div>
+</div>
+</section>
+<!-- 2. WHY POMEGRANÉ / THE PHILOSOPHY & CLINICAL HERITAGE -->
+<section class="w-full py-16 lg:py-24 border-b border-outline-variant/30 bg-surface-container-lowest" id="philosophy">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Lore, clinical narrative, performance metrics -->
+<div class="lg:col-span-6 space-y-6">
+<span class="text-[11px] tracking-[0.25em] text-secondary font-semibold uppercase block">The Pomegranate Lore</span>
+<h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl text-on-surface leading-tight">
+            Where Ancient Sacred Fruit Meets Haute Cellular Science.
+          </h2>
+<p class="text-base sm:text-lg text-on-surface-variant font-light leading-relaxed">
+            For millennia across Mediterranean antiquity, the crowned pomegranate reigned as the enduring empress of youth, cellular resurrection, and fertile vitality. POMEGRANÉ captures this primeval life force by cold-extracting sacred seeds within six hours of orchard harvest, locking bio-active polyphenols at their absolute zenith.
+          </p>
+<!-- Clinical Stats Grid -->
+<div class="grid grid-cols-3 gap-4 pt-6 border-t border-outline-variant/30">
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/40 text-center">
+<span class="block font-['Playfair_Display'] text-2xl sm:text-3xl text-secondary font-medium">98.4%</span>
+<span class="text-[11px] text-on-surface-variant uppercase tracking-wider block mt-1.5 leading-tight font-light">Cold-Pressed Punica Seed Oil</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/40 text-center">
+<span class="block font-['Playfair_Display'] text-2xl sm:text-3xl text-secondary font-medium">72-Hr</span>
+<span class="text-[11px] text-on-surface-variant uppercase tracking-wider block mt-1.5 leading-tight font-light">Cellular Hydration Lock</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/40 text-center">
+<span class="block font-['Playfair_Display'] text-2xl sm:text-3xl text-secondary font-medium">+84%</span>
+<span class="text-[11px] text-on-surface-variant uppercase tracking-wider block mt-1.5 leading-tight font-light">Barrier Elasticity Lift</span>
+</div>
+</div>
+</div>
+<!-- Right: Large Horizontal Editorial Still-Life Image -->
+<div class="lg:col-span-6">
+<div class="relative rounded-2xl overflow-hidden border border-outline-variant/50 shadow-2xl group">
+<img alt="POMEGRANÉ jar alongside ripe opened pomegranates on red marble" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/AEtjO1V9tHvPWhWvtTqhSU2H0zB9KvG9XmicB_o-q45XWuUNEL69Jygmiqj733_iDFXIauKVA9iFrf6HMbwKj-C4m63yjJ40ogDV7Sg8mbNKloDPWYDZKGB-AXlZCZm8VvjXkVFTdST-rIv4R5fycS7nP5aF7_kjvr1WjnrmRxs91Mzf8Q3krVKgPfl4eN8U5EdJ7puRgxV9GhLJ-12nhzz65VaezyKN_ktZftmzj-l5wlq3YWmHViiuo6QP6Do">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-6 right-6 flex items-center justify-between text-[11px] tracking-[0.2em] text-secondary uppercase">
+<span class="">Fresh Sicilian Orchard Harvest</span>
+<span class="">100% Cold Processed</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. CORE PRODUCT BENEFITS (TRI-ACTIVE ARCHITECTURE: RENEW • HYDRATE • GLOW) -->
+<section class="w-full py-16 lg:py-24 border-b border-outline-variant/30 bg-surface-container-low/40" id="science">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+<!-- Header Banner -->
+<div class="text-center max-w-3xl mx-auto mb-14">
+<span class="text-[11px] tracking-[0.25em] text-secondary font-semibold uppercase block mb-2">Tri-Active Architecture</span>
+<h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl text-on-surface mb-4">The Triad of Skin Apotheosis</h2>
+<p class="text-base text-on-surface-variant font-light leading-relaxed">
+            Three synergistic biological pathways orchestrated to restore cellular metabolism, deep lipid reservoirs, and luminous light refraction.
+          </p>
+</div>
+<!-- 3-Column Interactive Benefit Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+<!-- Benefit 1: Renew -->
+<div class="lux-glass p-8 rounded-2xl border border-secondary/30 relative hover:border-secondary transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-['Playfair_Display'] text-2xl text-primary font-medium tracking-wide">01. RENEW</span>
+<span class="material-symbols-outlined text-secondary text-[26px]">cycle</span>
+</div>
+<p class="text-body-md text-on-surface-variant font-light leading-relaxed mb-6">
+                Bio-fermented polyphenols deeply stimulate mitochondrial regeneration, accelerating epidermal cell turnover and shielding structural collagen against oxidative environmental fatigue.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-secondary tracking-widest uppercase font-semibold">
+<span class="">Bio-Ferment Actives</span>
+<span class="">Cellular Renewal</span>
+</div>
+</div>
+<!-- Benefit 2: Hydrate -->
+<div class="lux-glass p-8 rounded-2xl border border-secondary/30 relative hover:border-secondary transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-['Playfair_Display'] text-2xl text-primary font-medium tracking-wide">02. HYDRATE</span>
+<span class="material-symbols-outlined text-secondary text-[26px]">water_drop</span>
+</div>
+<p class="text-body-md text-on-surface-variant font-light leading-relaxed mb-6">
+                Micro-encapsulated dual hyaluronic acid spheres paired with rare pomegranate sterols establish an osmotic moisture reservoir, sealing hydration through deep dermal layers for 72 continuous hours.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-secondary tracking-widest uppercase font-semibold">
+<span class="">Sterol Infusion</span>
+<span class="">Deep Dermal Seal</span>
+</div>
+</div>
+<!-- Benefit 3: Glow -->
+<div class="lux-glass p-8 rounded-2xl border border-secondary/30 relative hover:border-secondary transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-['Playfair_Display'] text-2xl text-primary font-medium tracking-wide">03. GLOW</span>
+<span class="material-symbols-outlined text-secondary text-[26px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<p class="text-body-md text-on-surface-variant font-light leading-relaxed mb-6">
+                A concentrated triple antioxidant matrix powered by cold-extracted ellagic acid harmonizes hyper-pigmentation and micro-texture, revealing an incandescent lit-from-within complexion.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-secondary tracking-widest uppercase font-semibold">
+<span class="">Ellagic Acid</span>
+<span class="">Incandescent Finish</span>
+</div>
+</div>
+</div>
+<!-- Macro Visual Triptych Showcase Image -->
+<div class="w-full rounded-2xl overflow-hidden border border-outline-variant/50 shadow-2xl">
+
+</div>
+</div>
+</section>
+<!-- 4. THE SENSORY RITUAL / CEREMONIAL PROTOCOL (SPLIT-SCREEN) -->
+<section class="w-full py-16 lg:py-24 border-b border-outline-variant/30 bg-surface-container-lowest" id="ritual">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Editorial Portrait Image -->
+<div class="lg:col-span-6">
+<div class="relative rounded-2xl overflow-hidden border border-secondary/30 shadow-2xl group">
+<img alt="Sensory application ritual with POMEGRANÉ radiance cream" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/AEtjO1X2BJMqqION5zA3LQSAZyNbbwGGNfv0KtwASY9GvOH8UzSoyRpq1jjJFS4ofIvyPLKTQGoK65IutSlMfWoGxGnjsz_7wN8smK0MVQsiNBWPnLCkLwDs3kP6v5yhvQWxbTik4KTQ2pa5PfSCOWVWqon9KPw1AeU52fjg1EjlT_o20RKa4Clpz72J8MNboIzT2pNhOlUZBQY3fD2cUz_6pYG4_CwMHKnx78wsw-nNzXH3gfVb_UuUkIhlzFc">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-6 right-6 flex items-center justify-between text-[11px] tracking-[0.2em] text-secondary uppercase">
+<span class="">Sensory Dermal Absorption</span>
+<span class="">Ceremonial Application</span>
+</div>
+</div>
+</div>
+<!-- Right: 3-Step Protocol -->
+<div class="lg:col-span-6 space-y-8">
+<div>
+<span class="text-[11px] tracking-[0.25em] text-secondary font-semibold uppercase block mb-2">Ceremonial Protocol</span>
+<h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl text-on-surface">The Application Ritual</h2>
+<p class="text-body-md text-on-surface-variant font-light mt-3 leading-relaxed">
+              Transform daily skincare into an intimate meditative moment of cellular restoration.
+            </p>
+</div>
+<div class="space-y-8 relative before:absolute before:inset-y-3 before:left-5 before:w-px before:bg-outline-variant/40">
+<!-- Step 1 -->
+<div class="relative pl-14">
+<span class="absolute left-2.5 top-0 size-6 rounded-full bg-surface-container-high border border-secondary flex items-center justify-center text-[11px] text-secondary font-bold">1</span>
+<h3 class="font-['Playfair_Display'] text-xl text-on-surface font-medium">Ignite the Botanical Lipids</h3>
+<p class="text-body-md text-on-surface-variant font-light mt-2 leading-relaxed">
+                Extract a pearl-sized portion using the hand-carved gold spatula. Warm gently between fingertips for five seconds to melt the whipped botanical lipid structure into a silk elixir.
+              </p>
+</div>
+<!-- Step 2 -->
+<div class="relative pl-14">
+<span class="absolute left-2.5 top-0 size-6 rounded-full bg-surface-container-high border border-secondary flex items-center justify-center text-[11px] text-secondary font-bold">2</span>
+<h3 class="font-['Playfair_Display'] text-xl text-on-surface font-medium">Inhale the Essence</h3>
+<p class="text-body-md text-on-surface-variant font-light mt-2 leading-relaxed">
+                Cup palms lightly over the face and inhale three slow diaphragmatic breaths. Immerse the olfactory senses in delicate wild fig, crushed pink peppercorn, and sun-warmed pomegranate bark.
+              </p>
+</div>
+<!-- Step 3 -->
+<div class="relative pl-14">
+<span class="absolute left-2.5 top-0 size-6 rounded-full bg-surface-container-high border border-secondary flex items-center justify-center text-[11px] text-secondary font-bold">3</span>
+<h3 class="font-['Playfair_Display'] text-xl text-on-surface font-medium">Ascendant Sculpt Press</h3>
+<p class="text-body-md text-on-surface-variant font-light mt-2 leading-relaxed">
+                Press flat palms upward starting at the clavicle and neck, gliding upward along the jawline and cheekbones toward temples to invigorate micro-circulation and sculpt incandescent contour.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. INGREDIENT ALCHEMY & SOURCING CRAFT -->
+<section class="w-full py-16 lg:py-24 border-b border-outline-variant/30 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Laboratory & Apothecary Still Life Image -->
+<div class="lg:col-span-5 order-2 lg:order-2">
+<div class="relative rounded-2xl overflow-hidden border border-outline-variant/40 shadow-2xl">
+<img alt="Cold-pressed pomegranate seed oil and botanical laboratory elixirs" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ2AUj308OPN7eP2FQlaV2OMJH_VZUAdCbCbmbs-rHpom2XIo6inEycPx5LMGIXtLlujs6fUOn5GWdeqQ6-_Eoi5nxuqbJRNIgBqKrT6yZviBDaOjilj0tHVN3FygU91FHuMXg27nuEYhuc0NQth7E2fuvWqNugtInvncUhOcMNPHbk1xlKeG2z1hA-QZI1k23zNygDJ3TIhN3e0OQs5Yc10aWxh-u3nlnn6kt5zrm6WTMtovLNMlRWYvgqy2nNFC3V1RpNMtMjRYvEw">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-5 right-5 text-[11px] tracking-[0.2em] text-secondary uppercase flex justify-between">
+<span class="">Haute Formulation</span>
+<span class="">Grasse Botanical Lab</span>
+</div>
+</div>
+</div>
+<!-- Right: 4 Geographic Actives + Clean Standards -->
+<div class="lg:col-span-7 order-1 space-y-8 lg:order-1">
+<div>
+<span class="text-[11px] tracking-[0.25em] text-secondary font-semibold uppercase block">Sourcing &amp; Craft</span>
+<h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl text-on-surface mt-2">High-Altitude Bio-Actives</h2>
+<p class="text-body-md text-on-surface-variant font-light mt-3 leading-relaxed">
+              Every botanical element is sustainably wild-harvested at peak seasonal potency and cold-compounded under pharmaceutical precision in France.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-5 rounded-xl bg-surface-container border border-outline-variant/30 hover:border-secondary/50 transition-colors">
+<span class="text-secondary text-[11px] font-semibold tracking-widest uppercase block">Sicily, Italy</span>
+<h3 class="font-['Playfair_Display'] text-lg text-on-surface mt-1">Crimson Punica Granatum</h3>
+<p class="text-[13px] text-on-surface-variant mt-1.5 leading-normal font-light">Pure cold-pressed oil enriched with 80% rare omega-5 punicic acid.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container border border-outline-variant/30 hover:border-secondary/50 transition-colors">
+<span class="text-secondary text-[11px] font-semibold tracking-widest uppercase block">Andalusia, Spain</span>
+<h3 class="font-['Playfair_Display'] text-lg text-on-surface mt-1">Olive-Derived Squalane</h3>
+<p class="text-[13px] text-on-surface-variant mt-1.5 leading-normal font-light">Bio-mimetic lipid that mirrors human natural sebum for zero pore weight.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container border border-outline-variant/30 hover:border-secondary/50 transition-colors">
+<span class="text-secondary text-[11px] font-semibold tracking-widest uppercase block">Grasse, France</span>
+<h3 class="font-['Playfair_Display'] text-lg text-on-surface mt-1">Bio-Active Peptides</h3>
+<p class="text-[13px] text-on-surface-variant mt-1.5 leading-normal font-light">Hexapeptide-8 complex for smoothing micro-expression tension lines.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container border border-outline-variant/30 hover:border-secondary/50 transition-colors">
+<span class="text-secondary text-[11px] font-semibold tracking-widest uppercase block">Basel, Switzerland</span>
+<h3 class="font-['Playfair_Display'] text-lg text-on-surface mt-1">Ultra-Pure Niacinamide</h3>
+<p class="text-[13px] text-on-surface-variant mt-1.5 leading-normal font-light">Pharmaceutical grade 5% solution to refine skin texture and pores.</p>
+</div>
+</div>
+<!-- Clean Standards Badges -->
+<div class="p-4 rounded-xl bg-surface-container-high/50 border border-outline-variant/40 flex flex-wrap items-center justify-around gap-4 text-center text-[11px] text-on-surface uppercase tracking-widest font-semibold">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">eco</span> 100% Vegan</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">cruelty_free</span> Cruelty-Free</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">thermostat</span> Cold Formulated</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">recycling</span> Ceramic Vessels</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. TEXTURE & SENSORY EXPERIENCE (TACTILE METAMORPHOSIS) -->
+<section class="w-full py-16 lg:py-24 border-b border-outline-variant/30 bg-surface-container-lowest relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+<div class="relative rounded-3xl overflow-hidden border border-secondary/35 gold-glow shadow-2xl">
+<img alt="Macro luxury texture of POMEGRANÉ open ceramic jar and velvet cream swatch on red marble" class="w-full h-[450px] sm:h-[550px] lg:h-[620px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsomA7PCDKQxIt-LPZWhYABTC5uxuswQD_ngQRdrmbAOX_ijC2UE8fh5KddpuDdsp-z0HU9aV9jnCHZ1VilehbMVqXBKlNR99yqGWzyZX0lV6VVeECH2n2BLn-wpvDJM2C3eH84aS9gGiEl_GWnyKtnqIF0UCvFEsZaTW5Mqi_7u_OgeFMMYC7ryRdqscKb-mOxyD_TUBKT3qdnE9gyQpY7vt7Px_iS27-HlMh4pu26XXSrP876ELANZWIOd4PA9rEhQ">
+<!-- Gradient and Glass Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent lg:bg-gradient-to-r lg:from-surface-container-lowest/90 lg:via-surface-container-lowest/60 lg:to-transparent flex items-center">
+<div class="max-w-xl p-8 sm:p-12 lg:p-16">
+<span class="text-[11px] tracking-[0.25em] text-secondary font-semibold uppercase block mb-3">Tactile Metamorphosis</span>
+<h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl text-on-surface mb-5 leading-tight">
+                Velvet Glaze to Silk Veil
+              </h2>
+<p class="text-body-md text-on-surface-variant font-light leading-relaxed mb-6">
+                Upon the gentle warmth of human touch, the dense whipped balm instantly transforms into a translucent hydration glaze. It absorbs within forty seconds, imparting an imperceptible, velvet satin luster without oiliness.
+              </p>
+<div class="flex flex-wrap items-center gap-6 text-[13px] text-secondary font-medium">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">check_circle</span> Non-Comedogenic</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">check_circle</span> Velvet Matte Luster</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">check_circle</span> 40-Sec Dermal Absorption</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. DEDICATED PROMEGRANE PRODUCT INFORMATION SECTION (SPECIFIED EXACT CONTENT & CONTRASTING WARM IVORY/CREAM TREATMENT) -->
+<section class="w-full py-16 lg:py-24 border-b border-outline-variant/30 bg-[#f9f6f0] text-[#221113]" id="promegrane-cream">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Content: 45% on Desktop (Text strictly on Left) -->
+<div class="lg:col-span-5 flex flex-col items-start text-left order-1">
+<span class="text-[11px] tracking-[0.28em] font-semibold text-[#8b0e1e] uppercase mb-3">PROMEGRANE FACE CREAM</span>
+<h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl font-normal text-[#221113] tracking-tight leading-tight mb-5">
+              Radiance, rooted in pomegranate.
+            </h2>
+<p class="text-base sm:text-lg text-[#553b3e] font-light leading-relaxed mb-8">
+              Meet PROMEGRANE, a nourishing face cream inspired by the natural goodness of pomegranate. Thoughtfully created for a simple daily skincare ritual, it helps leave skin feeling soft, hydrated, smooth, and naturally radiant.
+            </p>
+<!-- Benefits List (Exact text specified) -->
+<div class="w-full space-y-4 mb-8">
+<div class="p-4 rounded-xl bg-white/70 border border-[#e5ded4] shadow-sm">
+<div class="font-['Playfair_Display'] text-base font-semibold text-[#8b0e1e] tracking-wide mb-1">01 — HYDRATION</div>
+<p class="text-[13px] text-[#4a3a3c] font-light leading-relaxed">
+                  Helps replenish moisture and leaves skin feeling soft and supple.
+                </p>
+</div>
+<div class="p-4 rounded-xl bg-white/70 border border-[#e5ded4] shadow-sm">
+<div class="font-['Playfair_Display'] text-base font-semibold text-[#8b0e1e] tracking-wide mb-1">02 — RADIANCE</div>
+<p class="text-[13px] text-[#4a3a3c] font-light leading-relaxed">
+                  Helps revive the appearance of dull-looking skin for a fresh, healthy-looking glow.
+                </p>
+</div>
+<div class="p-4 rounded-xl bg-white/70 border border-[#e5ded4] shadow-sm">
+<div class="font-['Playfair_Display'] text-base font-semibold text-[#8b0e1e] tracking-wide mb-1">03 — NOURISHMENT</div>
+<p class="text-[13px] text-[#4a3a3c] font-light leading-relaxed">
+                  A comforting daily cream inspired by the nourishing character of pomegranate.
+                </p>
+</div>
+</div>
+<!-- CTA -->
+<a class="inline-flex items-center gap-3 bg-[#8b0e1e] hover:bg-[#680011] text-[#fddfa6] px-8 py-4 rounded-lg text-[13px] tracking-[0.2em] font-semibold uppercase shadow-lg shadow-[#8b0e1e]/20 transition-all duration-300 hover:scale-[1.02]" href="#reserve">
+<span class="">DISCOVER PROMEGRANE</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Right Visual: 55% on Desktop (Warm Ivory Image https://lh3.googleusercontent.com/aida-public/AB6AXuCyBqscI3ByJhDUtg3e0IYDdT7BSghzdtxAFfMCbXXg6_eQkj35RUmwrBn7bTRfR1EqA1DuEILhdfQqz90N06HOz6zubNIixkJO_-am-twA2EE9mMrxOMT9tEPIMQgCZsWApazPkZMptQjtofvaM0o6d4YYfvAT_x2XT3SnZjlPhWys20b69nwmeSjeIX50ZtgOEiqv0Esw7IH9TXUnOl-EClYq2trinNU-o21JA99u0azgi-FuBGaC) -->
+<div class="lg:col-span-7 order-2">
+<div class="relative rounded-2xl overflow-hidden border border-[#ded5c8] shadow-2xl group bg-[#eee8dc]">
+<img alt="PROMEGRANE face cream jar on warm ivory stone with freshly opened organic pomegranate revealing glistening ruby seeds" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyBqscI3ByJhDUtg3e0IYDdT7BSghzdtxAFfMCbXXg6_eQkj35RUmwrBn7bTRfR1EqA1DuEILhdfQqz90N06HOz6zubNIixkJO_-am-twA2EE9mMrxOMT9tEPIMQgCZsWApazPkZMptQjtofvaM0o6d4YYfvAT_x2XT3SnZjlPhWys20b69nwmeSjeIX50ZtgOEiqv0Esw7IH9TXUnOl-EClYq2trinNU-o21JA99u0azgi-FuBGaC">
+<div class="absolute bottom-4 left-6 right-6 flex items-center justify-between text-[11px] tracking-[0.2em] text-[#8b0e1e] uppercase font-semibold">
+<span class="">Handcrafted Ceramic Reliquary</span>
+<span class="">Pure Punica Extract</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. PRODUCT PURCHASE SHOWCASE & ACQUISITION PORTAL -->
+<section class="w-full py-16 lg:py-24 border-b border-outline-variant/30 bg-surface-container-low" id="reserve">
+<div class="max-w-4xl mx-auto px-6 sm:px-8">
+<div class="text-center mb-10">
+<span class="text-[11px] tracking-[0.25em] text-secondary font-semibold uppercase block mb-2">Acquisition Portal</span>
+<h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl text-on-surface">Secure Your Ceramic Jar</h2>
+<p class="text-body-md text-on-surface-variant font-light mt-2">Allocated strictly by harvest volume. Batch 04 reserve is currently open.</p>
+</div>
+<div class="lux-glass rounded-3xl border border-secondary/40 p-8 sm:p-10 shadow-2xl relative">
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center mb-8">
+<div class="sm:col-span-5 relative aspect-square max-w-[240px] mx-auto rounded-2xl overflow-hidden border border-outline-variant/50 shadow-xl">
+<img alt="POMEGRANÉ Radiance Cream" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsq25S55l67vrKemIdAq9bqjOcewq_Ph3rJCqtm9zghvddicZ5NBgfgvmC5Rc93jWq5LMZn4hllT3_IgmfxCX7dqTqkZBckeBV7L9b2DsXEdR4P5apuo-_TU9jR7HnK4sN0RzePOhkOtY6mmcQ1SGr3fbwz42wgprYe8xFxI4nMTdVYh3Nu9GyObEbEaPIWoKkjIULObEhiMW0fch_K3rKALy6vE3O0Xc3xUF4ayspXvasm_3XLTy_u8PraJMLSQQUYw">
+</div>
+<div class="sm:col-span-7 text-left space-y-3">
+<div class="inline-block text-[11px] text-secondary tracking-widest uppercase font-semibold bg-surface-container-high px-3 py-1 rounded-full border border-secondary/30">
+                Fresh Harvest Compounding
+              </div>
+<h3 class="font-['Playfair_Display'] text-2xl sm:text-3xl text-on-surface">POMEGRANÉ RADIANCE CREAM</h3>
+<p class="text-sm text-on-surface-variant font-light">50g / Net Wt. 1.76 oz. • Hand-Cast Crimson Ceramic</p>
+<div class="text-2xl font-['Playfair_Display'] text-secondary pt-2">$185 <span class="text-xs text-on-surface-variant font-['Plus_Jakarta_Sans'] font-light">USD (Duty-Free Worldwide)</span></div>
+</div>
+</div>
+<!-- Purchase Tier Selection -->
+<div class="space-y-4 mb-8">
+<label class="flex items-center justify-between p-4 rounded-xl border border-secondary bg-surface-container-high/70 cursor-pointer transition-all">
+<div class="flex items-center gap-3">
+<input checked="" class="text-primary focus:ring-0 bg-surface-container-low border-outline size-4" name="purchase_tier" type="radio">
+<div class="text-left">
+<span class="block text-sm font-semibold text-on-surface">Haute Connoisseur Concierge (Recommended)</span>
+<span class="block text-[12px] text-secondary">Automatic refill pod delivered every 60 days • Save 15%</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-lg font-bold text-secondary">$157</span>
+<span class="block text-[11px] text-on-surface-variant line-through">$185</span>
+</div>
+</label>
+<label class="flex items-center justify-between p-4 rounded-xl border border-outline-variant/60 bg-surface-container/60 cursor-pointer hover:border-secondary/60 transition-all">
+<div class="flex items-center gap-3">
+<input class="text-primary focus:ring-0 bg-surface-container-low border-outline size-4" name="purchase_tier" type="radio">
+<div class="text-left">
+<span class="block text-sm font-medium text-on-surface">Single Edition Reserve</span>
+<span class="block text-[12px] text-on-surface-variant">One-time artisanal presentation jar</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-lg font-bold text-on-surface">$185</span>
+</div>
+</label>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-gradient-to-r from-primary-container via-surface-container-high to-primary-container text-on-primary-fixed border border-secondary/60 py-4 px-8 rounded-xl text-[13px] tracking-[0.22em] font-bold uppercase flex items-center justify-center gap-3 hover:brightness-110 transition-all shadow-xl shadow-primary-container/40">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span class="">Add to Haute Bag — Reserve Batch 04</span>
+</button>
+<div class="mt-6 flex flex-wrap items-center justify-center gap-6 text-[12px] text-on-surface-variant">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">verified</span> Guaranteed Potency</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">local_shipping</span> Global DHL Priority</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">auto_fix_high</span> Hand-Embossed Spatula Included</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. CRITICAL ACCLAIM (THE HAUTE GAZETTE) -->
+<section class="w-full py-16 lg:py-24 border-b border-outline-variant/30 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+<div class="text-center mb-12">
+<span class="text-[11px] tracking-[0.25em] text-secondary font-semibold uppercase block mb-2">Critical Acclaim</span>
+<h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl text-on-surface">The Haute Gazette</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<blockquote class="p-8 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-['Playfair_Display'] italic text-lg sm:text-xl text-on-surface leading-relaxed">
+                "A rare triumph in high botanicals. The sculptural ceramic vessel is an art piece, but the restorative glow on the dermis within four days is the true enchantment."
+              </p>
+</div>
+<cite class="block mt-6 text-xs tracking-[0.2em] text-secondary uppercase not-italic font-semibold">— VOGUE SCANDINAVIA</cite>
+</blockquote>
+<blockquote class="p-8 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-['Playfair_Display'] italic text-lg sm:text-xl text-on-surface leading-relaxed">
+                "POMEGRANÉ does not merely hydrate; it bestows an ethereal incandescent barrier that withstood harsh European winter dry air with utter grace."
+              </p>
+</div>
+<cite class="block mt-6 text-xs tracking-[0.2em] text-secondary uppercase not-italic font-semibold">— HARPER’S BAZAAR</cite>
+</blockquote>
+</div>
+</div>
+</section>
+<!-- 5. SKINCARE CONCIERGE FAQ -->
+<section class="w-full py-16 lg:py-24 border-b border-outline-variant/30 bg-surface-container-low" id="concierge">
+<div class="max-w-4xl mx-auto px-6 sm:px-8">
+<div class="text-left mb-10">
+<span class="text-[11px] tracking-[0.25em] text-secondary font-semibold uppercase block">Inquiries</span>
+<h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl text-on-surface mt-1">Skincare Concierge Questions</h2>
+</div>
+<div class="space-y-4">
+<!-- Question 1 -->
+<details class="group p-5 rounded-xl bg-surface-container border border-outline-variant/35 transition-all [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-['Playfair_Display'] text-lg text-on-surface font-medium">
+<span class="">Is POMEGRANÉ suitable for sensitive skin?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-body-md text-on-surface-variant font-light mt-4 leading-relaxed">
+              Yes. The formulation is 100% hypoallergenic, non-comedogenic, and devoid of artificial fragrances, essential oils, parabens, and sulfates. Punicic acid provides naturally anti-inflammatory cellular comfort.
+            </p>
+</details>
+<!-- Question 2 -->
+<details class="group p-5 rounded-xl bg-surface-container border border-outline-variant/35 transition-all [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-['Playfair_Display'] text-lg text-on-surface font-medium">
+<span class="">Can it be worn beneath high-fashion cosmetics?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-body-md text-on-surface-variant font-light mt-4 leading-relaxed">
+              Exquisitely so. Because the velvet glaze transitions to a weightless silk veil within forty seconds, it serves as a luminescent dermal primer that prevents makeup creasing or separation throughout the day.
+            </p>
+</details>
+<!-- Question 3 -->
+<details class="group p-5 rounded-xl bg-surface-container border border-outline-variant/35 transition-all [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-['Playfair_Display'] text-lg text-on-surface font-medium">
+<span class="">How does the ceramic vessel refill work?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-body-md text-on-surface-variant font-light mt-4 leading-relaxed">
+              The inner chamber unscrews effortlessly. Refill pods made from 100% recycled amber glass are delivered bi-monthly to keep the hand-cast ceramic keepsake intact forever.
+            </p>
+</details>
+<!-- Question 4 -->
+<details class="group p-5 rounded-xl bg-surface-container border border-outline-variant/35 transition-all [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-['Playfair_Display'] text-lg text-on-surface font-medium">
+<span class="">What are the international courier and dispatch terms?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-body-md text-on-surface-variant font-light mt-4 leading-relaxed">
+              All orders are protected in thermal temperature-controlled cases and sent via DHL Express Priority. Transit time is 2-4 business days worldwide with duties and customs taxes fully prepaid.
+            </p>
+</details>
+</div>
+</div>
+</section>
+<!-- 6. FINAL PROMEGRANE BRAND SIGNATURE SECTION WITH REALISTIC INTERACTIVE POMEGRANATE SEEDS -->
+<section class="relative w-full overflow-hidden bg-[#12080a] border-t border-outline-variant/40 pt-20 pb-16 min-h-[550px] lg:min-h-[680px] flex flex-col justify-between" id="brand-crescendo">
+<!-- Interactive Ground Seeds HTML5 Canvas Layer (Physically on floor/ground) -->
+<canvas class="absolute inset-0 w-full h-full pointer-events-auto z-10" id="pomegranateSeedsCanvas" width="1220" height="679"></canvas>
+<!-- Center Brand Content (Non-obstructed, elevated z-index) -->
+<div class="relative z-20 max-w-7xl mx-auto px-6 text-center my-auto pointer-events-none">
+<!-- Eyebrow Sub-mark -->
+<div class="inline-flex items-center gap-3 border border-secondary/40 bg-surface-container-high/70 backdrop-blur-md px-5 py-1.5 rounded-full mb-8 pointer-events-auto">
+<span class="size-1.5 rounded-full bg-secondary animate-ping"></span>
+<span class="text-secondary text-[11px] tracking-[0.28em] font-semibold uppercase">HAUTE RADIANCE CELLULAR NECTAR</span>
+</div>
+<!-- Monumental Typography -->
+<h2 class="font-['Playfair_Display'] text-6xl sm:text-8xl lg:text-9xl tracking-[0.18em] sm:tracking-[0.24em] font-bold uppercase select-none text-transparent bg-clip-text bg-gradient-to-b from-[#f2dedf] via-[#e0c38c] to-[#8b0e1e]/60 leading-none mb-6">
+          PROMEGRANE
+        </h2>
+<!-- Signature Details -->
+<p class="text-xs sm:text-sm tracking-[0.35em] text-secondary/90 uppercase font-medium max-w-xl mx-auto mb-3">
+          Formulated in Grasse • Hand-Cast Ceramic Reliquary
+        </p>
+<p class="text-[11px] tracking-[0.25em] text-on-surface-variant uppercase font-light">
+          Batch 04 Reserve • Allocated by Season
+        </p>
+<!-- Interactive hint -->
+<div class="mt-8 text-[10px] tracking-[0.25em] text-secondary/60 uppercase font-light pointer-events-auto">
+          Move cursor or touch along the surface to interact with the ruby pomegranate seeds
+        </div>
+</div>
+<!-- Sub-footer with Copyright & Restrained Links -->
+<div class="relative z-20 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full pt-12 mt-8 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-6 text-[11px] tracking-[0.18em] text-on-surface-variant font-light">
+<div class="">
+          © 2026 POMEGRANÉ BEAUTÉ HAUTE. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex items-center gap-6 uppercase">
+<a class="hover:text-secondary transition-colors" href="#philosophy">Philosophy</a>
+<a class="hover:text-secondary transition-colors" href="#science">Orchards</a>
+<a class="hover:text-secondary transition-colors" href="#promegrane-cream">Refills</a>
+<a class="hover:text-secondary transition-colors" href="#concierge">Concierge</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Interactive Pomegranate Seeds Physics Canvas Script -->
+<script>
+    (function initPomegranateSeeds() {
+      const canvas = document.getElementById('pomegranateSeedsCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let width, height;
+      let animationFrameId;
+
+      // Mouse/touch interaction state
+      const mouse = {
+        x: -9999,
+        y: -9999,
+        radius: 120,
+        active: false
+      };
+
+      function resize() {
+        const rect = canvas.getBoundingClientRect();
+        width = canvas.width = rect.width;
+        height = canvas.height = rect.height;
+      }
+
+      window.addEventListener('resize', () => {
+        resize();
+        initSeeds();
+      });
+
+      // Track cursor position
+      canvas.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+        mouse.active = true;
+      });
+
+      canvas.addEventListener('mouseleave', () => {
+        mouse.active = false;
+        mouse.x = -9999;
+        mouse.y = -9999;
+      });
+
+      canvas.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 0) {
+          const rect = canvas.getBoundingClientRect();
+          mouse.x = e.touches[0].clientX - rect.left;
+          mouse.y = e.touches[0].clientY - rect.top;
+          mouse.active = true;
+        }
+      }, { passive: true });
+
+      canvas.addEventListener('touchend', () => {
+        mouse.active = false;
+        mouse.x = -9999;
+        mouse.y = -9999;
+      });
+
+      // Seed class representing realistic pomegranate arils resting on the floor plane
+      class PomegranateSeed {
+        constructor() {
+          this.init();
+        }
+
+        init() {
+          // Position seeds primarily along the floor plane (bottom 35% of canvas) and clustered near left/right flanks
+          const onFloor = Math.random() < 0.75;
+          if (onFloor) {
+            this.x = Math.random() * width;
+            this.baseY = height - (Math.random() * (height * 0.32) + 20);
+          } else {
+            // Clustered slightly near outer edges but still on lower surface boundaries
+            const side = Math.random() < 0.5 ? 0 : 1;
+            this.x = side === 0 ? Math.random() * (width * 0.25) : width - Math.random() * (width * 0.25);
+            this.baseY = height - (Math.random() * (height * 0.45) + 30);
+          }
+
+          this.y = this.baseY;
+          this.vx = 0;
+          this.vy = 0;
+          
+          // Realistic seed morphology
+          this.size = Math.random() * 5 + 6.5; // radius between 6.5 and 11.5px
+          this.aspect = 0.75 + Math.random() * 0.4; // teardrop / angular facet
+          this.rotation = Math.random() * Math.PI * 2;
+          this.vRot = (Math.random() - 0.5) * 0.01;
+          
+          // Organic resting drift parameters
+          this.driftSpeed = 0.0008 + Math.random() * 0.001;
+          this.driftPhase = Math.random() * Math.PI * 2;
+          this.driftAmplitude = Math.random() * 8 + 4;
+
+          // Ruby facet colors
+          this.rubyCore = Math.random() > 0.5 ? '#b80c22' : '#960717';
+          this.rubyHighlight = '#ff5b6c';
+          this.rubyGlow = 'rgba(235, 30, 60, 0.45)';
+        }
+
+        update() {
+          // Subtle organic idle drifting on the surface
+          this.driftPhase += this.driftSpeed;
+          const targetDriftX = Math.sin(this.driftPhase) * this.driftAmplitude;
+          const targetDriftY = Math.cos(this.driftPhase * 0.7) * (this.driftAmplitude * 0.35);
+
+          // Interactive physics: repulsion from cursor
+          if (mouse.active) {
+            const dx = this.x - mouse.x;
+            const dy = this.y - mouse.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < mouse.radius && dist > 0) {
+              const force = (1 - dist / mouse.radius) * 3.8;
+              const angle = Math.atan2(dy, dx);
+              this.vx += Math.cos(angle) * force;
+              this.vy += Math.sin(angle) * force;
+              this.vRot += (Math.random() - 0.5) * 0.05;
+            }
+          }
+
+          // Damping and spring back toward resting surface position
+          this.vx *= 0.88;
+          this.vy *= 0.88;
+          this.vRot *= 0.92;
+
+          this.x += this.vx;
+          this.y += this.vy;
+          this.rotation += this.vRot;
+
+          // Gentle spring return to surface level
+          const dyToFloor = (this.baseY + targetDriftY) - this.y;
+          this.y += dyToFloor * 0.035;
+
+          // Containment within bounds
+          if (this.x < 15) this.x = 15;
+          if (this.x > width - 15) this.x = width - 15;
+          if (this.y > height - 10) this.y = height - 10;
+        }
+
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate(this.rotation);
+
+          // 1. Soft Realistic Contact Ground Shadow underneath each seed
+          ctx.save();
+          ctx.translate(0, this.size * 0.8);
+          ctx.scale(1.3, 0.45);
+          const shadowGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, this.size * 1.4);
+          shadowGrad.addColorStop(0, 'rgba(0, 0, 0, 0.65)');
+          shadowGrad.addColorStop(0.6, 'rgba(30, 5, 8, 0.4)');
+          shadowGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+          ctx.fillStyle = shadowGrad;
+          ctx.beginPath();
+          ctx.arc(0, 0, this.size * 1.4, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+
+          // 2. Ruby Glow halo
+          ctx.shadowColor = this.rubyGlow;
+          ctx.shadowBlur = 12;
+
+          // 3. Faceted Ruby Seed Body (Angular, organic teardrop polygon)
+          ctx.beginPath();
+          const r = this.size;
+          ctx.moveTo(0, -r * 1.15); // tip
+          ctx.bezierCurveTo(r * 0.85, -r * 0.8, r * 1.05, r * 0.4, r * 0.5, r * 0.95);
+          ctx.bezierCurveTo(0, r * 1.15, -r * 0.5, r * 0.95, -r * 1.05, r * 0.4);
+          ctx.bezierCurveTo(-r * 0.85, -r * 0.8, -r * 0.3, -r * 1.05, 0, -r * 1.15);
+          ctx.closePath();
+
+          // Seed 3D translucent gradient
+          const seedGrad = ctx.createRadialGradient(
+            -r * 0.3, -r * 0.4, r * 0.1,
+            0, 0, r * 1.1
+          );
+          seedGrad.addColorStop(0, '#e52540');
+          seedGrad.addColorStop(0.35, this.rubyCore);
+          seedGrad.addColorStop(0.75, '#56000a');
+          seedGrad.addColorStop(1, '#2c0005');
+          ctx.fillStyle = seedGrad;
+          ctx.fill();
+
+          // Subtle gold/amber facet edge
+          ctx.strokeStyle = 'rgba(224, 195, 140, 0.25)';
+          ctx.lineWidth = 0.75;
+          ctx.stroke();
+
+          // 4. Inner White Pit Core Hint
+          ctx.beginPath();
+          ctx.ellipse(r * 0.05, r * 0.1, r * 0.22, r * 0.35, 0.2, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 230, 230, 0.35)';
+          ctx.fill();
+
+          // 5. Glossy Specular Surface Highlight (Glassy reflection)
+          ctx.shadowBlur = 0;
+          ctx.beginPath();
+          ctx.ellipse(-r * 0.35, -r * 0.4, r * 0.3, r * 0.15, -Math.PI / 4, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+          ctx.fill();
+
+          // Secondary ambient rim highlight
+          ctx.beginPath();
+          ctx.arc(r * 0.4, r * 0.4, r * 0.18, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 170, 185, 0.35)';
+          ctx.fill();
+
+          ctx.restore();
+        }
+      }
+
+      let seeds = [];
+      function initSeeds() {
+        seeds = [];
+        // Calculate appropriate density according to screen width
+        const count = Math.min(Math.floor(width / 32), 48);
+        for (let i = 0; i < count; i++) {
+          seeds.push(new PomegranateSeed());
+        }
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+        for (let i = 0; i < seeds.length; i++) {
+          seeds[i].update();
+          seeds[i].draw();
+        }
+        animationFrameId = requestAnimationFrame(animate);
+      }
+
+      resize();
+      initSeeds();
+      animate();
+    })();
+  </script>
+<script src="frame-animation.js"></script>
+
+
+</body></html>
