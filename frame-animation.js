@@ -12,7 +12,7 @@ let redredCurrentFrame = -1;
 let redredScrollFrame;
 
 function redredFramePath(index) {
-  return `frames/ezgif-frame-${String(index + 1).padStart(3, '0')}.jpg`;
+  return `ezgif-frame-${String(index + 1).padStart(3, '0')}.jpg`;
 }
 
 function drawRedredFrame(index) {
