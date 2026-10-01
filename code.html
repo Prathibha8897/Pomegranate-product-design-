@@ -880,7 +880,9 @@
       function initSeeds() {
         seeds = [];
         // Calculate appropriate density according to screen width
-        const count = Math.min(Math.floor(width / 32), 48);
+        const count = Math.min(
+  Math.max(Math.floor(width / 25), 20),
+  30);
         for (let i = 0; i < count; i++) {
           seeds.push(new PomegranateSeed());
         }
